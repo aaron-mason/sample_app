@@ -28,16 +28,16 @@ describe "Static pages" do
 		end
   end
 
-  describe "Special page" do
+  describe "Contact page" do
 
-    it "should have the content 'Special'" do
-      visit '/static_pages/special'
-      expect(page).to have_content('Special')
+    it "should have the content 'Contact'" do
+      visit '/static_pages/contact'
+      expect(page).to have_content('Contact')
     end
 
 		it "should have the right title" do
-    		visit '/static_pages/special'
-  			expect(page).to have_title("Special")
+    		visit '/static_pages/contact'
+  			expect(page).to have_title("Contact")
 		end
   end
 
